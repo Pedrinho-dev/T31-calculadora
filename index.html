@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script>
+
+            class Calculadora{
+           somar(){
+            // var n1 = document.querySelectorAll("input")[0].value
+            // var n2 = document.querySelectorAll("input")[1].value
+            // var somar = parseFloat(n1)+ parseFloat(n2);
+
+            var n1 = num1.value
+            var n2 = num2.value
+            var soma = parseFloat(n1)+ parseFloat(n2)
+            alert (soma)
+            }
+
+            subtrair(){
+            // var n1 =  document.querySelectorAll("input")[0].value
+            // var n2 =  document.querySelectorAll("input")[1].value
+            // var sub = parseFloat(n1)- parseFloat(n2)
+            var n1 = num1.value
+            var n2 = num2.value
+            var sub = n1 - n2
+           alert (sub)
+            }
+
+           multiplicar(){
+            var n1 = num1.value
+            var n2 = num2.value
+            var multi = n1 * n2
+            alert (multi)
+            }
+
+             dividir(){
+                // var n1 = document.querySelectorAll("input")[0].value
+                // var n2 = document.querySelectorAll("input")[1].value
+                var n1 = num1.value
+                var n2 = num2.value
+               
+                if(n2==0){
+                  window.alert("TENTE OUTRO NÚMERO DIFERENTE DE 0")
+                }else{
+                    var divi = parseFloat(n1)/ parseFloat(n2)
+                    window.alert (divi)
+                }  
+            }
+        }
+
+        var calc = new Calculadora
+        </script>
+    </head>
+    <body>
+        <h1>Calculadora do Recanto do Pedrinho</h1>
+        <input id = "num1" type ="number" placeholder="Número1" />
+        <input id = "num2" type ="number" placeholder="Número2" />
+        <button onclick="calc.somar()">soma</button>
+        <button onclick="calc.subtrair()">subtrair</button>
+        <button onclick="calc.multiplicar()">multiplicar</button>
+        <button onclick="calc.dividir()">dividir</button>
+    </body>
+</html>
